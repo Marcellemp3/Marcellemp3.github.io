@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="index.css">
+
 </head>
 <body>
   <header>
@@ -15,10 +16,10 @@
         line-height: normal;
         text-transform: uppercase;">Marcelle Philosophe</p>
         <div>
-            <a class="menu-item" href="#">Projects</a>
-            <a class="menu-item" href="#">About</a>
-            <a class="menu-item" href="#">CV</a>
-            <a class="menu-item" href="#">Contact</a>
+            <button class="menu-item" onclick="navigateTo('MyWork.html')">Projects</button>
+            <button class="menu-item" onclick="navigateTo('about.html')">About</button>
+            <button class="menu-item" onclick="navigateTo('cv.html')">CV</button>
+            <button class="menu-item" onclick="navigateTo('contact.html')">Contact</button>
         </div>
     </nav>
   </header>
@@ -53,10 +54,10 @@
                 <button class="button">About</button> 
                 <button class="button">My Work</button> 
             </div>
-        <div>
-            <img src="profile.png" alt="profile pic">
         </div>
-        </div>
+    <div>
+        <img src="main pic profile.png" alt="main-profile" class="right-photo">
+    </div>
     </section>
 
     <div class="card-container">
@@ -106,5 +107,6 @@
         </div>
     </div>
   </main>
+  <script src="marcelle.js"></script>
 </body>
 </html>

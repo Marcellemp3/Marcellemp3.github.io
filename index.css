@@ -12,6 +12,7 @@
     top: 0px;
     left: 0px;
     position: absolute;
+    z-index: 999;
   }
 
   nav {
@@ -24,28 +25,38 @@
   }
 
   nav div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 82px;
-
-  }
-
-  nav .menu-item {
-    padding: 16px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    gap: 65px;
+
+  }
+  
+
+  nav .menu-item {
+    background-color: transparent;
     color: #333;
     font-family: Nunito Sans;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.2px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
     text-decoration: none;
 
   }
+ 
+  nav .menu-item:hover {
+    text-decoration: underline;
+    color: black;
+
+  }
+
   
  .main-div-1 {
     position: absolute;
@@ -71,6 +82,15 @@
     font-size: 32px;
   }
 
+  .right-photo {
+    padding-top: 86px;
+    float: right;
+    width: 770px;
+  
+  }
+
+
+
   .body {
     color: #828282;
     font-family: Nunito Sans;
@@ -87,7 +107,12 @@
     padding-top: 44px;
     justify-content: space-between;
     width: 243px;
+    transition: .15s ease-in; 
 
+  }
+
+  .main-buttons:hover {
+    color: #193342;
   }
   
   .card-container {
@@ -275,7 +300,7 @@
 }
 
 .card-container-2 h4 {
-      color: #25282B;
+    color: #25282B;
     font-family: Playfair Display;
     font-size: 40px;
     font-style: normal;
